@@ -1,19 +1,27 @@
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'; // 라우터 관련 컴포넌트 임포트
-import Page1 from './Page1.jsx';
-import Page2 from './Page2.jsx';
+import Resume from './Resume.jsx';
+import Portfolio from './Portfolio.jsx';
+import About from './About.jsx';
+import Dday from './Dday.jsx';
 
 function App() {
     return (
         <>
             <nav>
-                <Link to="/page1">페이지 1</Link> | {" "}
-                <Link to="/page2">페이지 2</Link>
+                <Link to="/resume">📜 이력</Link> | {" "}
+                <Link to="/portfolio">🎨 포트폴리오</Link> | {" "}
+                <Link to="/about">😊 자기소개</Link> | {" "}
+                <Link to="/dday">🎓 졸업까지</Link>
             </nav>
-            <Routes>
-                <Route path="/page1" element={<Page1 />} />
-                <Route path="/page2" element={<Page2 />} />
-            </Routes>
+            <main className="main-content">
+                <Routes>
+                    <Route path="/resume" element={<Resume />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/dday" element={<Dday />} />
+                </Routes>
+            </main>
         </>
     )
 }

@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.main-content {
+  height: calc(100vh - 10rem); /* Adjust 10rem based on nav height and padding */
+  overflow-y: auto;
+  border: 1px solid #ccc; /* Adding a border to visualize the container */
+}

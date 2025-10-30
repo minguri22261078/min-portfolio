@@ -1,0 +1,14 @@
+:root {
+    --accent: #7AA2FF;
+    --text: #ffffff;
+    --bg: #000000;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+h2 { margin: 0; }

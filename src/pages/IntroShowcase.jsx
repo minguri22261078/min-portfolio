@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./IntroShowcase.module.css";
+import SimpleLanyard from "@/components/SimpleLanyard.jsx";
 
 import me from "@/assets/me.png";
 
@@ -20,8 +21,6 @@ export default function IntroGridFull({
                                               "‘보여지는 디자인’을 넘어 사용자가 직접 체험하는 경험을 설계합니다.",
                                               "아이디어 발상부터 프로토타이핑, 인터랙션 구현까지 전 과정을 주도적으로 수행합니다.",
                                               "디자인과 기술의 경계를 허물며, 시각적 미학과 사용자 경험의 조화를 고민합니다.",
-                                              "UI/UX, 모션그래픽, 웹 인터랙션을 융합해 감각적이고 직관적인 화면을 만듭니다.",
-                                              "새로운 시각 언어를 실험하며, 경험을 통해 전달되는 감정의 깊이를 탐구합니다.",
                                               "사람들이 자연스럽게 몰입하고 오래 기억할 수 있는 디지털 경험을 목표로 합니다."
                                           ],
 
@@ -146,7 +145,7 @@ export default function IntroGridFull({
 
             {/* 우하 — 보조 이미지(선택) */}
             <div className={`${styles.cell} ${styles.imgRight}`}>
-                {images.bottomRight ? <img src={images.bottomRight} alt="" /> : <div className={styles.ph}>Add image (right)</div>}
+                <SimpleLanyard />
                 <div className={styles.vLabelFarRight}>PROFILE</div>
             </div>
 

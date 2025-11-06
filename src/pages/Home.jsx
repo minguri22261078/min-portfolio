@@ -11,15 +11,7 @@ export default function Home() {
             {/* PAGE 1: 홈(히어로) */}
             <section className={`${styles.page} ${styles.heroPage}`}>
                 <div className={styles.heroPoster}>
-                    <CircularText
-                        text={"MIN PORTFOLIO • MIN PORTFOLIO • "}
-                        radius={420}
-                        fontSize={70}
-                        duration={30}
-                        color="rgba(255,255,255,0.28)"
-                        accentColor="#7AA2FF"
-                        className={styles.ringInner}
-                    />
+                    <CircularText />
                     <div className={styles.poster}>
                         <div className={styles.halo} aria-hidden />
                         <FadeUp delay={0.05}>

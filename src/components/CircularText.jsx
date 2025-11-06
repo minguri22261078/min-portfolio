@@ -3,11 +3,11 @@ import "./CircularText.css";
 
 export default function CircularText({
                                          text = "MIN PORTFOLIO • MIN PORTFOLIO • ",
-                                         radius = 520,           // px 반지름
-                                         fontSize = 80,          // 글자 크기
+                                         radius = 430,           // px 반지름
+                                         fontSize = 65,          // 글자 크기
                                          duration = 30,          // 회전 주기(초)
                                          color = "rgba(255,255,255,0.56)", // 기본 색
-                                         accentColor = "#7AA2FF",          // ⭐️ min 색 (하늘+보라)
+                                         accentColor = "#7AA2FF",          // min 색 (하늘+보라)
                                          className = "",
                                      }) {
     const letters = Array.from(text);
